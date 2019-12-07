@@ -1,0 +1,19 @@
+{
+  "name": "gussing-game-node-constructor",
+  "version": "1.0.0",
+  "description": "this package is using for gussing word game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhamposhtiban/gussing-game-node-constructor.git"
+  },
+  "author": "elham poshtiban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elhamposhtiban/gussing-game-node-constructor/issues"
+  },
+  "homepage": "https://github.com/elhamposhtiban/gussing-game-node-constructor#readme"
+}
