@@ -2,7 +2,20 @@
  const inquirer = require ("inquirer")
  const  chalk = require("chalk");
 
- guessWord = ["before sunrise", "titanic", "god father", "oneday", "her", "me before you"]
+ const guessWord = ["before sunrise", "titanic", "god father", "oneday", "her", "me before you"]
+
+ let rightAnswer = [];
+ let wrongAnswer = [];
+
+ const attempt = 8;
+
+ const index = Math.floor(Math.random()*guessWord.length)
+
+ const randomWord =guessWord[index]
+ console.log (index)
+ console.log(randomWord)
+ 
+
 
 
 
