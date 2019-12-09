@@ -1,5 +1,5 @@
 
-letter = require ("./letter");
+ const Letter = require ("./letter");
 
 function Word (word) {
 
@@ -10,10 +10,14 @@ function Word (word) {
             this.wordArray.push(" ")
         }
         else {
-            this.wordArray.push(new Letter(word.charAt(i)))
+            let Answer = new Letter(word.charAt(i))
+            this.wordArray.push(Answer)
         }
     }
 
+    this.toString = function () {
+        return this.wordArray.join(" ");
+    }
 
 }
 module.exports = Word;
