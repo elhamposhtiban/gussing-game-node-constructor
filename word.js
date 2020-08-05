@@ -1,5 +1,5 @@
 
- const Letter = require ("./letter");
+const Letter = require ("./letter");
 
 function Word (word) {
 
@@ -13,23 +13,24 @@ function Word (word) {
         }
         // here if we have the random word from index file it will transfer
         //the word to the letter.js to display letter or underscore
+
         else {
             let Answer = new Letter(word.charAt(i))
             this.wordArray.push(Answer)
         }
     }
 
-//here we have the string of random word based on showLetter finction in 
+//here we have the string of random word based on showLetter function in 
 //letter.js file
     this.createString = function(){
 
         let wordString = " ";
 
-        this.wordArray.forEach(function(item){
-           if(item === " "){
+        this.wordArray.forEach( function (item){
+           if(item === " ") {
                wordString += "  ";
            }
-           else{
+           else {
                wordString += item.showLetter();
            }
         });

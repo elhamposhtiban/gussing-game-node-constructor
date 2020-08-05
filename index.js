@@ -17,16 +17,15 @@ const lettersArray = /[A-Za-z]/
 function play () {
 
   
-        const index = Math.floor(Math.random()*movieWord.length)
+    const index = Math.floor(Math.random()*movieWord.length)
 
-        const randomWord =movieWord[index]
+    const randomWord =movieWord[index]
 
-        let guessMovie = new word (randomWord)
-        // console.log(guessMovie)
+    let guessMovie = new word (randomWord)
 
-        attempt = 8;
+    attempt = 8;
 
-         guessWord(guessMovie, randomWord)
+    guessWord(guessMovie, randomWord)
     
 }
 
@@ -40,7 +39,7 @@ function guessWord(guess, actual){
     //Shows the word being guessed, initially as underscores. The underscores will be replaced by letters when they are guessed
     console.log("\n" + guess.createString() + "\n")
  
-     inquirer.prompt([
+    inquirer.prompt([
  
          {
              type: "input",
@@ -76,7 +75,7 @@ function guessWord(guess, actual){
         else {
 
 
-            // will Show the correct word whether the user won or lost
+        // will Show the correct word whether the user won or lost
             
 
             if (attempt === 0) {
@@ -98,6 +97,7 @@ function guessWord(guess, actual){
                     message: chalk.cyan.inverse("Do you wanna play again?"),
                     default: true
                 }
+                
             ]).then(function(answer){
                 //If yes, a new game starts.
                 if(answer.playAgain){
